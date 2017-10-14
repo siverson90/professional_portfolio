@@ -1,0 +1,15 @@
+.wrapper {
+  width: 100%;
+  border: 1px solid red;
+  
+}
+
+.welcome {
+  display: inline-block;
+}
+
+#profile-pic {
+  max-width: 250px;
+  max-height: 250px;
+  margin: 10px;
+}
