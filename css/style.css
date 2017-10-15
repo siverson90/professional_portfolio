@@ -1,7 +1,6 @@
 .wrapper {
   width: 100%;
   border: 1px solid red;
-  
 }
 
 .welcome {
@@ -17,4 +16,21 @@
 .social {
   max-height: 100px;
   max-width: 100px;
+}
+
+.carousel-item:nth-child(1) {
+  
+}
+
+.carousel-image {
+  max-width: 300px;
+  max-height: 300px
+}
+
+.pics {
+  margin: 5px;
+}
+
+.center-text {
+  text-align: center;
 }

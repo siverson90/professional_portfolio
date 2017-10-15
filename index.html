@@ -2,11 +2,14 @@
 <html>
 <head>
   <title>Josh's Portfolio</title>
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+   <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
+<body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,35 +21,21 @@
 </nav>
 
 <section class="container wrapper">
-  <div class="welcome">
+  <div class="row">
+  <div class="welcome col-md-4">
     <img class="rounded-circle" id="profile-pic" src="images/Josh_linkedin.jpeg" alt="Josh's linkedin Picture">
   </div>
-  <div class="welcome">
+  <div class="welcome col-md-8">
     <h1> Hi I'm Josh</h1>
     <!-- utilze a rotating adjective of some kind -->
     <p>I am a full stack web developer, who enjoys building products, working with teams and improving everyday</p>
     <p>In my spare time I like to <span id="rotation-phrases"></span>.</p>
+    </div>
   </div>
   
+  <!-- ******** ADD Languagees -->
 
 </section>
-
-<!-- What I'm working on -->
-<!-- Use Github API to render most recent project -->
-
-<!-- Images with portfolio -->
-<div class="container wrapper">
-  <p>Here is a list of my previous projects</p>
-  <div>
-    <a href="https://github.com/siverson90/LIRI-Bot">Liri Bot</a>
-  </div>
-  <div>
-    <a href="https://github.com/siverson90/Giftastic">Gifphy Integration</a>
-  </div>
-  <div>
-    <a href="https://github.com/jwong1219/Bored-Friday-Fun-Finder">Friday Fun Finder</a>
-  </div>
-</div>
 
 <div class="wrapper container">
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -55,6 +44,7 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
+  <!-- generate via javasciprt -->
   <div class="carousel-inner" role="listbox">
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -72,11 +62,18 @@
 <!-- contact -->
 
 <div class="container wrapper">
-  <div class="row">
+  <div class="row pics">
     <div class="col-md-4">
       <button type="button" class="btn btn-primary btn-lg" id="resume" download="Resume_Josh_Siverson.pdf">Josh's Resume</button>
     </div>
-    <div class="col-md-8">
+    <div class="languages col-md-4">
+      <div class="row">
+        <p class="col-md-12 center-text">Languages</p>
+      </div>
+      <div class="row" id="logos-row">
+      </div>
+    </div>
+    <div class="col-md-4">
       <div class="row">
         <div class="col-md-4">
           <a href="https://github.com/siverson90">
