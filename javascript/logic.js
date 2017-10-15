@@ -14,13 +14,13 @@ $( document ).ready(function() {
     {
       Name : "Liri Bot",
       Descritption : "This project was great",
-      Image : "images/robot.png",
+      Image : "images/chatbot.png",
       imageLink: "https://github.com/siverson90/LIRI-Bot",
     },
     {
       Name : "Train Schedule",
       Descritption : "This project was great",
-      Image : "images/train.jpg",
+      Image : "images/schedule.png",
       imageLink: "https://github.com/siverson90/LIRI-Bot",
     },
     {
@@ -85,7 +85,7 @@ $( document ).ready(function() {
   projects.forEach(function(element) {
     var carouselDiv = $("<div>");
     var rowDiv = $("<div>").addClass("row");
-    var pDiv = $("<div>").addClass("col-md-6");
+    var pDiv = $("<div>").addClass("col-md-8");
     var imageDiv = $("<div>").addClass("col-md-4");
     var projectName = $("<p>");
     var projectDes = $("<p>");

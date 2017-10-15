@@ -18,19 +18,29 @@
   max-width: 100px;
 }
 
-.carousel-item:nth-child(1) {
-  
-}
-
 .carousel-image {
   max-width: 300px;
   max-height: 300px
 }
 
-.pics {
-  margin: 5px;
-}
-
 .center-text {
   text-align: center;
+}
+
+body {
+  background-color: #c9c9c9;
+
+}
+
+.row {
+  background-color: #9ad3de;
+
+}
+
+nav {
+  background-color: #1d2120;
+}
+
+#navbar-logo {
+  color: white;
 }
