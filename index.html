@@ -6,21 +6,27 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
    <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Rubik" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light">
-  <a class="navbar-brand" href="#" id="navbar-logo">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+ 
+ <nav class="navbar navbar-expand-lg navbar-inverse bg-inverse sticky-top">
+  <a class="navbar-brand nav-text" href="#">Josh Siverson</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active nav-text" href="#">About Me <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link nav-text" href="#">Projects</a>
+      <a class="nav-item nav-link nav-text" href="#">Contact</a>
+    </div>
   </div>
 </nav>
 
-<div class="container wrapper">
+<div class="container-fluid wrapper">
   <div class="row">
     <div class="welcome col-md-4">
       <img class="rounded-circle" id="profile-pic" src="images/Josh_linkedin.jpeg" alt="Josh's linkedin Picture">
@@ -33,10 +39,10 @@
     </div>
   <!-- end row -->
   </div> 
-  <!-- end container -->
+  <!-- end container-fluid -->
 </div>
 
-<div class="container wrapper ">
+<div class="container-fluid wrapper ">
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -55,12 +61,12 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <!-- end container -->
+  <!-- end container-fluid -->
 </div>
 
 <!-- contact -->
-<div class="container wrapper">
-  <div class="row pics">
+<div class="container-fluid wrapper">
+  <div class="row align-items-center">
     <div class="col-md-4">
       <button type="button" class="btn btn-primary btn-lg" id="resume" adownload="Resume_Josh_Siverson.pdf">Josh's Resume
         <a href="professional_portfolio/Resume_Josh_Siverson.pdf" download="Josh's Resume PDF"></a>

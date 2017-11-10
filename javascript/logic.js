@@ -10,28 +10,7 @@ $( document ).ready(function() {
     "attend coffee tastings",
   ];
 
-  var projects = [
-    {
-      Name : "Liri Bot",
-      Descritption : "This project was great",
-      Image : "images/chatbot.png",
-      imageLink: "https://github.com/siverson90/LIRI-Bot",
-    },
-    {
-      Name : "Train Schedule",
-      Descritption : "This project was great",
-      Image : "images/schedule.png",
-      imageLink: "https://github.com/siverson90/LIRI-Bot",
-    },
-    {
-      Name: "Bored on a Friday",
-      Descritption: "This project was great",
-      Image: "images/fun.jpg",
-      imageLink: "https://github.com/siverson90/LIRI-Bot",
-    }
-  ];
-
-  var languages = [
+var languages = [
     {
       name : "HTML",
       image : "images/html5.png",
@@ -58,6 +37,33 @@ $( document ).ready(function() {
     }
   ]
 
+  var projects = [
+    {
+      Name : "Liri Bot",
+      Descritption : "This project was great",
+      Image : "images/chatbot.png",
+      imageLink: "https://github.com/siverson90/LIRI-Bot",
+      languagesUsed: languages,
+    },
+    {
+      Name : "Train Schedule",
+      Descritption : "This project was great",
+      Image : "images/schedule.png",
+      imageLink: "https://github.com/siverson90/LIRI-Bot",
+      languagesUsed: languages,
+    },
+    {
+      Name: "Bored on a Friday",
+      Descritption: "This project was great",
+      Image: "images/fun.jpg",
+      imageLink: "https://github.com/siverson90/LIRI-Bot",
+      languagesUsed: languages,
+    }
+  ];
+
+  console.log(projects[0].languagesUsed[0].image)
+
+  console.log(projects);
   // Profile picture, bio and interests
  
   var hobbyCounter=0;
@@ -83,15 +89,18 @@ $( document ).ready(function() {
   // Projects
 
   projects.forEach(function(element) {
+    console.log(element);
     var carouselDiv = $("<div>");
     var rowDiv = $("<div>").addClass("row");
     var pDiv = $("<div>").addClass("col-md-8");
     var imageDiv = $("<div>").addClass("col-md-4");
     var projectName = $("<p>");
     var projectDes = $("<p>");
+    var languagesP = $("<p>");
     var projectImage = $("<img>");
     var imageAHref = $("<a>").attr("href", element.imageLink);
   
+    languagesP.text("Languages used for project");
     projectName.text(element.Name);
     projectDes.text(element.Descritption);
     projectImage.attr("src", element.Image);
@@ -103,6 +112,7 @@ $( document ).ready(function() {
 
     pDiv.append(projectName);
     pDiv.append(projectDes);
+    pDiv.append(languagesP);
 
     rowDiv.append(pDiv);
     rowDiv.append(imageDiv);
