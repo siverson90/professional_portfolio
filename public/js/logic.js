@@ -61,9 +61,9 @@ var languages = [
     }
   ];
 
-  console.log(projects[0].languagesUsed[0].image)
+  // console.log(projects[0].languagesUsed[0].image)
 
-  console.log(projects);
+  // console.log(projects);
   // Profile picture, bio and interests
  
   var hobbyCounter=0;
@@ -73,7 +73,7 @@ var languages = [
       
       if( hobbyCounter < hobbbiesArray.length) {
         $("#rotation-phrases").text(hobbbiesArray[hobbyCounter]);
-        console.log(hobbbiesArray[hobbyCounter]);
+        // console.log(hobbbiesArray[hobbyCounter]);
         hobbyCounter ++;
       }
       else {
@@ -89,7 +89,7 @@ var languages = [
   // Projects
 
   projects.forEach(function(element) {
-    console.log(element);
+    // console.log(element);
     var carouselDiv = $("<div>");
     var rowDiv = $("<div>").addClass("row");
     var pDiv = $("<div>").addClass("col-md-8");

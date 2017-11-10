@@ -1,3 +1,4 @@
+// ****** CANVAS WORK *********
 var canvas = document.querySelector('canvas');
 
 canvas.width = window.innerWidth;
@@ -27,7 +28,7 @@ var colorArray = [
 window.addEventListener('mousemove', function(event){
   mouse.x = event.x;
   mouse.y = event.y;
-  console.log(mouse);
+  // console.log(mouse);
 
 })
 
@@ -97,7 +98,7 @@ function init(){
     
     circleArray.push(new Circle(x, y, dx, dy, radius));
   }
-  console.log(circleArray);
+  // console.log(circleArray);
 }
 
   function animate(){
