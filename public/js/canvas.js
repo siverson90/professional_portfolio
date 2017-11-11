@@ -89,7 +89,7 @@ function init(){
   // reset cicle array
   circleArray = [];
 
-  for ( let i = 0; i < 500; i++) {
+  for ( let i = 0; i < 700; i++) {
     var radius = (Math.random() * 3) + 1;
     var x = Math.random() * (innerWidth - radius * 2) + radius;
     var y = Math.random() * (innerHeight - radius * 2) + radius;

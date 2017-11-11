@@ -133,7 +133,9 @@ var languages = [
   // add onclick event listener and allow user to download resume
   $('#resume').click(function(event) {
     event.preventDefault();  //stop the browser from following
-    window.location.href = '../Resume_Josh_Siverson.pdf';
+    $.get("api/resume", function(data){
+      console.log("resume get route hit")
+    })
   });
 
   // Iterate through array of objects to render languages learned

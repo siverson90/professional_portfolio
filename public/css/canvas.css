@@ -1,5 +1,15 @@
 body {
-      margin: 0px;
-      background-color: black;
+  margin: 0px;
+  background-color: black;
     };
+
+#btn-wrapper {
+  margin:auto;
+  display:block;
+  z-index: 2;
+}
+
+#layer-1 {
+  z-index: 0;
+}
 
