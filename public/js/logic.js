@@ -32,9 +32,30 @@ var languages = [
       image : "images/nodejs.png",
     },
     {
-      name : "Bootstrap",
-      image : "images/bootstrap.png",
+      name : "MySQL",
+      image : "images/mysql.png",
+    },
+    {
+      name : "Handlebars",
+      image : "images/handlebars.png",
+    },
+    {
+      name : "Sequalize",
+      image : "images/sequalize.png",
+    },
+    {
+      name : "Express.js",
+      image : "images/express.png",
+    },
+    {
+      name : "MongoDB",
+      image : "images/mongodb.png",
+    },
+    {
+      name : "Mongoose",
+      image : "images/mongoose.png",
     }
+
   ]
 
   var projects = [
@@ -139,8 +160,9 @@ var languages = [
   });
 
   // Iterate through array of objects to render languages learned
+
   languages.forEach(function(element){
-    var bootstrapDiv = $("<div>").addClass("col-md-4");
+    var bootstrapDiv = $("<div>").addClass("col-md-2 align-self-center");
     var img = $("<img>").addClass("img-fluid language-logo rounded");
     img.attr("src", element.image);
     img.attr("alt", element.name);
