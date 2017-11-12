@@ -1,10 +1,15 @@
-<div class="container-fluid">
-  <canvas id="layer-1"></canvas>
-  <div id="btn-wrapper">
-  <a href="/portfolio">
-    <button type= "button" class= "btn btn-primary" id="portfolio">
-      Learn More about Josh
-    </button>
-  </a>
- </div>  
-</div>
+{{>nav/navbar}}
+<section id="space-canvas"><canvas></canvas>
+  {{>content/profile}}
+</section>
+<section id="content">
+  <div id="content-id">
+    {{>content/slider}}
+    {{>content/language-icon}}
+  </div>
+</section>
+<section id="contact">{{>content/contact}}</section>
+{{>nav/footer}}
+
+
+

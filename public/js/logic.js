@@ -113,7 +113,8 @@ var languages = [
     // console.log(element);
     var carouselDiv = $("<div>");
     var rowDiv = $("<div>").addClass("row");
-    var pDiv = $("<div>").addClass("col-md-8");
+    var spaceDiv = $("<div>").addClass("col-md-2")
+    var pDiv = $("<div>").addClass("col-md-6");
     var imageDiv = $("<div>").addClass("col-md-4");
     var projectName = $("<p>");
     var projectDes = $("<p>");
@@ -135,6 +136,7 @@ var languages = [
     pDiv.append(projectDes);
     pDiv.append(languagesP);
 
+    rowDiv.append(spaceDiv);
     rowDiv.append(pDiv);
     rowDiv.append(imageDiv);
 
@@ -148,6 +150,8 @@ var languages = [
   function addActiveToImage(){
     $(".carousel-item:eq(1)").addClass("active");
   }
+
+  // offset project section
 
   // Resume, langaues and Social
 
