@@ -61,24 +61,24 @@ var languages = [
   var projects = [
     {
       Name : "Liri Bot",
-      Descritption : "This project was great",
+      Descritption : "Node.js app that consumes Twitter's and Spotify's API and presents songs/tweets based on user inputs",
       Image : "images/chatbot.png",
       imageLink: "https://github.com/siverson90/LIRI-Bot",
-      languagesUsed: languages,
+      languagesUsed: "Node.js, NPM, API's and Ajax"
     },
     {
-      Name : "Train Schedule",
-      Descritption : "This project was great",
-      Image : "images/schedule.png",
-      imageLink: "https://github.com/siverson90/LIRI-Bot",
-      languagesUsed: languages,
+      Name : "Alcohol-event-planner",
+      Descritption : "Full stack app which provides recommendations to users based on event they are planning to attend through a currated list",
+      Image : "images/drinks.jpg",
+      imageLink: "https://github.com/siverson90/alcohol-event-planner",
+      languagesUsed: "Exress.js, Node.js, Handlebars, MySQL, NPM, jQuery",
     },
     {
       Name: "Bored on a Friday",
-      Descritption: "This project was great",
+      Descritption: "Web app providing event/concert recommendations to users in their geographical area happening on the day they search",
       Image: "images/fun.jpg",
-      imageLink: "https://github.com/siverson90/LIRI-Bot",
-      languagesUsed: languages,
+      imageLink: "https://github.com/siverson90/Bored-Friday-Fun-Finder",
+      languagesUsed: "HTML, CSS, jQuery, Firebase, Eventbrite API, Ticketmaster API"
     }
   ];
 
@@ -113,7 +113,8 @@ var languages = [
     // console.log(element);
     var carouselDiv = $("<div>");
     var rowDiv = $("<div>").addClass("row");
-    var spaceDiv = $("<div>").addClass("col-md-2")
+    var leftBumperDiv = $("<div>").addClass("col-md-1")
+    var rightBumperDiv = $("<div>").addClass("col-md-1") 
     var pDiv = $("<div>").addClass("col-md-6");
     var imageDiv = $("<div>").addClass("col-md-4");
     var projectName = $("<p>");
@@ -122,7 +123,7 @@ var languages = [
     var projectImage = $("<img>");
     var imageAHref = $("<a>").attr("href", element.imageLink);
   
-    languagesP.text("Languages used for project");
+    languagesP.text(element.languagesUsed);
     projectName.text(element.Name);
     projectDes.text(element.Descritption);
     projectImage.attr("src", element.Image);
@@ -136,9 +137,10 @@ var languages = [
     pDiv.append(projectDes);
     pDiv.append(languagesP);
 
-    rowDiv.append(spaceDiv);
+    rowDiv.append(leftBumperDiv);
     rowDiv.append(pDiv);
     rowDiv.append(imageDiv);
+    rowDiv.append(rightBumperDiv);
 
     carouselDiv.append(rowDiv);
     carouselDiv.addClass("carousel-item")
