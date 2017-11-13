@@ -6,10 +6,20 @@ module.exports = function(app) {
   app.get("/", function(req,res){
 
     res.render("home");
-  })
+  });
 
-  app.get("/portfolio", function(req,res){
+  app.get("/api/resume", function(req, res){
+    
+    var filePath = "/Resume_Josh_Siverson.pdf";
+    var fileName = "Resume_Josh_Siverson.pdf"
+    console.log("resume route");
 
-    res.render("portfolio");
-  })
+    res.download(__dirname + filePath, function(err){
+      if (err) throw err;
+      else {
+        console.log("no error");
+      }
+    });
+
+    });
 };

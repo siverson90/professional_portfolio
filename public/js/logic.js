@@ -153,16 +153,11 @@ var languages = [
     $(".carousel-item:eq(1)").addClass("active");
   }
 
-  // offset project section
 
-  // Resume, langaues and Social
-
-  // add onclick event listener and allow user to download resume
+  // Download Resume
   $('#resume').click(function(event) {
-    event.preventDefault();  //stop the browser from following
-    $.get("api/resume", function(data){
-      console.log("resume get route hit")
-    })
+    event.preventDefault();
+    window.open("/api/resume");
   });
 
   // Iterate through array of objects to render languages learned
