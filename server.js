@@ -4,6 +4,7 @@ var exphbs = require("express-handlebars");
 
 var app = express();
 
+var PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -18,6 +19,6 @@ app.set("view engine", "handlebars");
 require("./routes/api-routes.js")(app);
 
 // server on port 8080
-app.listen(8080, function() {
+app.listen(PORT, function() {
   console.log("App running on port 8080!");
 });
