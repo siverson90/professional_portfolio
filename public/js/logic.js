@@ -158,10 +158,10 @@ var languages = [
 
 
   // Download Resume
-  $('#resume').click(function(event) {
-    event.preventDefault();
-    window.open("/api/resume");
-  });
+  // $('#resume').click(function(event) {
+  //   event.preventDefault();
+  //   window.open("/api/resume");
+  // });
 
   // Iterate through array of objects to render languages learned
 
