@@ -54,17 +54,20 @@ var languages = [
     {
       name : "Mongoose",
       image : "images/mongoose.png",
+    },
+    {
+      name : "React.js",
+      image : "images/react.png",
     }
-
   ]
 
   var projects = [
     {
-      Name : "Liri Bot",
-      Descritption : "Node.js app that consumes Twitter's and Spotify's API and presents songs/tweets based on user inputs",
-      Image : "images/chatbot.png",
-      imageLink: "https://github.com/siverson90/LIRI-Bot",
-      languagesUsed: "Node.js, NPM, API's and Ajax"
+      Name : "Cali.cool",
+      Descritption : "Cali.cool is a photo sharing MERN-stack app for Californians by Californians, a visual platform for sharing the California experience. The collection of photographs is open for public viewing, but requires a login to begin sharing photos.",
+      Image : "images/calicool.png",
+      imageLink: "http://cali.cool/",
+      languagesUsed: "MongoDB, Express, React.js, Node.js, Passport.js, NPM's, Heroku, MLab, PointDNS, Cloudinary API, Axios"
     },
     {
       Name : "Alcohol-event-planner",
