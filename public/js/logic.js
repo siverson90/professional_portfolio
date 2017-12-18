@@ -70,14 +70,14 @@ var languages = [
       Name : "Alcohol-event-planner",
       Descritption : "Full stack app which provides recommendations to users based on event they are planning to attend through a currated list",
       Image : "images/drinks.jpg",
-      imageLink: "https://github.com/siverson90/alcohol-event-planner",
+      imageLink: "https://alcohol-event-planner.herokuapp.com/",
       languagesUsed: "Exress.js, Node.js, Handlebars, MySQL, NPM, jQuery",
     },
     {
       Name: "Bored on a Friday",
       Descritption: "Web app providing event/concert recommendations to users in their geographical area happening on the day they search",
       Image: "images/fun.jpg",
-      imageLink: "https://github.com/siverson90/Bored-Friday-Fun-Finder",
+      imageLink: "https://jwong1219.github.io/Bored-Friday-Fun-Finder/",
       languagesUsed: "HTML, CSS, jQuery, Firebase, Eventbrite API, Ticketmaster API"
     }
   ];
